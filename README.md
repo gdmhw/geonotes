@@ -47,9 +47,8 @@
      expo-location
      
 - notification flow
-
- - client takes in user's geolocation
- - performs query to postgresql/postgis db 
+   - client takes in user's geolocation
+   - performs query to postgresql/postgis db 
    - ST_DWITHIN: if user latlong point within point with note containing their user_id, return true
    - when true, client triggers alert notification to user or server triggers notification to user
    - user clicks ok on notification, note is deleted.
